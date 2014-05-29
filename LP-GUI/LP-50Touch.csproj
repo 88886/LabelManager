@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D828984-EC04-4D39-9A3B-39F5DA6761DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LP50Touch</RootNamespace>
+    <AssemblyName>Label Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1399936176_103062.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Expression.Blend.Sdk.1.0.2\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APPLEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APPLEL.Designer.cs">
+      <DependentUpon>APPLEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APPLEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APPLEM.Designer.cs">
+      <DependentUpon>APPLEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APRICOTL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APRICOTL.Designer.cs">
+      <DependentUpon>APRICOTL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APRICOTM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APRICOTM.Designer.cs">
+      <DependentUpon>APRICOTM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APRICOTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APRICOTS.Designer.cs">
+      <DependentUpon>APRICOTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BANANAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BANANAL.Designer.cs">
+      <DependentUpon>BANANAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BANANAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BANANAM.Designer.cs">
+      <DependentUpon>BANANAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BANANAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BANANAS.Designer.cs">
+      <DependentUpon>BANANAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BBERRYL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BBERRYL.Designer.cs">
+      <DependentUpon>BBERRYL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BBERRYM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BBERRYM.Designer.cs">
+      <DependentUpon>BBERRYM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BBERRYS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BBERRYS.Designer.cs">
+      <DependentUpon>BBERRYS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BCURRL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCURRL.Designer.cs">
+      <DependentUpon>BCURRL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BCURRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCURRM.Designer.cs">
+      <DependentUpon>BCURRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BCURRS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCURRS.Designer.cs">
+      <DependentUpon>BCURRS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLBERRYL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BLBERRYL.Designer.cs">
+      <DependentUpon>BLBERRYL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLBERRYM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BLBERRYM.Designer.cs">
+      <DependentUpon>BLBERRYM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLBERRYS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BLBERRYS.Designer.cs">
+      <DependentUpon>BLBERRYS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHERRYL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHERRYL.Designer.cs">
+      <DependentUpon>CHERRYL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHERRYM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHERRYM.Designer.cs">
+      <DependentUpon>CHERRYM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHERRYS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHERRYS.Designer.cs">
+      <DependentUpon>CHERRYS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRAPEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRAPEL.Designer.cs">
+      <DependentUpon>GRAPEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRAPEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRAPEM.Designer.cs">
+      <DependentUpon>GRAPEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRAPES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRAPES.Designer.cs">
+      <DependentUpon>GRAPES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KIWIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KIWIL.Designer.cs">
+      <DependentUpon>KIWIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KIWIM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KIWIM.Designer.cs">
+      <DependentUpon>KIWIM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KIWIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KIWIS.Designer.cs">
+      <DependentUpon>KIWIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LEMONL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LEMONL.Designer.cs">
+      <DependentUpon>LEMONL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LEMONM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LEMONM.Designer.cs">
+      <DependentUpon>LEMONM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LEMONS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LEMONS.Designer.cs">
+      <DependentUpon>LEMONS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LP-50Touch.cs" />
+    <Compile Include="APPLES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APPLES.Designer.cs">
+      <DependentUpon>APPLES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORANGEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORANGEL.Designer.cs">
+      <DependentUpon>ORANGEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORANGEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORANGEM.Designer.cs">
+      <DependentUpon>ORANGEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORANGES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ORANGES.Designer.cs">
+      <DependentUpon>ORANGES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEACHL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEACHL.Designer.cs">
+      <DependentUpon>PEACHL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEACHM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEACHM.Designer.cs">
+      <DependentUpon>PEACHM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEACHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEACHS.Designer.cs">
+      <DependentUpon>PEACHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEARL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEARL.Designer.cs">
+      <DependentUpon>PEARL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEARM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEARM.Designer.cs">
+      <DependentUpon>PEARM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEARS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEARS.Designer.cs">
+      <DependentUpon>PEARS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RBERRYL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RBERRYL.Designer.cs">
+      <DependentUpon>RBERRYL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RBERRYM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RBERRYM.Designer.cs">
+      <DependentUpon>RBERRYM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RBERRYS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RBERRYS.Designer.cs">
+      <DependentUpon>RBERRYS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SBERRYL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SBERRYL.Designer.cs">
+      <DependentUpon>SBERRYL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SBERRYM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SBERRYM.Designer.cs">
+      <DependentUpon>SBERRYM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SBERRYS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SBERRYS.Designer.cs">
+      <DependentUpon>SBERRYS.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APPLEL.resx">
+      <DependentUpon>APPLEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APPLEM.resx">
+      <DependentUpon>APPLEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APRICOTL.resx">
+      <DependentUpon>APRICOTL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APRICOTM.resx">
+      <DependentUpon>APRICOTM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APRICOTS.resx">
+      <DependentUpon>APRICOTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BANANAL.resx">
+      <DependentUpon>BANANAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BANANAM.resx">
+      <DependentUpon>BANANAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BANANAS.resx">
+      <DependentUpon>BANANAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BBERRYL.resx">
+      <DependentUpon>BBERRYL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BBERRYM.resx">
+      <DependentUpon>BBERRYM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BBERRYS.resx">
+      <DependentUpon>BBERRYS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCURRL.resx">
+      <DependentUpon>BCURRL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCURRM.resx">
+      <DependentUpon>BCURRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCURRS.resx">
+      <DependentUpon>BCURRS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLBERRYL.resx">
+      <DependentUpon>BLBERRYL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLBERRYM.resx">
+      <DependentUpon>BLBERRYM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLBERRYS.resx">
+      <DependentUpon>BLBERRYS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHERRYL.resx">
+      <DependentUpon>CHERRYL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHERRYM.resx">
+      <DependentUpon>CHERRYM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHERRYS.resx">
+      <DependentUpon>CHERRYS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APPLES.resx">
+      <DependentUpon>APPLES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRAPEL.resx">
+      <DependentUpon>GRAPEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRAPEM.resx">
+      <DependentUpon>GRAPEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRAPES.resx">
+      <DependentUpon>GRAPES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KIWIL.resx">
+      <DependentUpon>KIWIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KIWIM.resx">
+      <DependentUpon>KIWIM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KIWIS.resx">
+      <DependentUpon>KIWIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LEMONL.resx">
+      <DependentUpon>LEMONL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LEMONM.resx">
+      <DependentUpon>LEMONM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LEMONS.resx">
+      <DependentUpon>LEMONS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORANGEL.resx">
+      <DependentUpon>ORANGEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORANGEM.resx">
+      <DependentUpon>ORANGEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORANGES.resx">
+      <DependentUpon>ORANGES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PEACHL.resx">
+      <DependentUpon>PEACHL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PEACHM.resx">
+      <DependentUpon>PEACHM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PEACHS.resx">
+      <DependentUpon>PEACHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PEARL.resx">
+      <DependentUpon>PEARL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PEARM.resx">
+      <DependentUpon>PEARM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PEARS.resx">
+      <DependentUpon>PEARS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RBERRYL.resx">
+      <DependentUpon>RBERRYL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RBERRYM.resx">
+      <DependentUpon>RBERRYM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RBERRYS.resx">
+      <DependentUpon>RBERRYS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SBERRYL.resx">
+      <DependentUpon>SBERRYL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SBERRYM.resx">
+      <DependentUpon>SBERRYM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SBERRYS.resx">
+      <DependentUpon>SBERRYS.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1399936176_103062.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
